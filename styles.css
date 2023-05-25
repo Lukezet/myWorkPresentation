@@ -29,8 +29,8 @@ ul {
 .container1 {
     width: 92%;
     height: 100vh;
-    margin: auto;
-    margin-bottom: 100px;
+    margin: 0px;
+
 
 }
 /*NAV*/
@@ -209,7 +209,7 @@ ul {
       .menu-btn:hover {
         opacity: 0.5;
       }
-    .nav-main .nav-menu{
+    .nav-main ul.nav-menu{
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -224,10 +224,11 @@ ul {
         background: linear-gradient(118deg, #3ac28e 5%, #1992e4 100%);
         border-radius: 0px 0px 100px 0px;
         transform: translateX(-500px);
-        transition: transform .5s ease-in-out ;
+        
 
     }
     .nav-main .nav-menu.show{
+        transition: transform .5s ease-in-out;
         transform: translateX(0px);
     }
     .nav-main ul li{
@@ -273,16 +274,11 @@ ul {
     }
        
 }
-@media (max-width: 480px){
-.menu-btn {
-    right: -40px;
-  }
-}
+
 @media (max-width: 350px) {
     .btnKnowMobile{
-        margin-top: 150px;
+        margin-top: 120px;
     }
     
-    /* body{background-repeat:repeat;}
-     */
-}
+
+} 

@@ -4,3 +4,6 @@ document.querySelector('.menu-btn').addEventListener('click', ()=>{
         //creamos el evento al dar click
         //classlist para agregar una clase
         //metodo toggle para que solo la cree si no existe. y si esta la quite 
+
+ScrollReveal().reveal('.showprofile');
+ScrollReveal().reveal('.grilla', { delay: 500 });
