@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
   }
-  html {
+  /* html {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
     scroll-padding-bottom: 60px;
     scroll-padding-left: 0;
     scroll-padding-right: 0;
-    --scroll-duration: 100ms; /* Duración de la animación: 1500 milisegundos (1.5 segundos) */
+    --scroll-duration: 100ms; 
   }
   
   a[href^="#"] {
     transition-duration: var(--scroll-duration);
-  }
+  } */
 
 body{
     width: 100%;
@@ -209,6 +209,29 @@ ul {
 .btnKnowMobile{
     display: none;
 
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    z-index: 10;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border:3px solid rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    visibility: hidden;
+    transition: all .4s;
+}
+.back-to-top__image {
+    height: 70%;
 }
 
 @media (max-width: 800px) {
