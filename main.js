@@ -7,3 +7,13 @@ document.querySelector('.menu-btn').addEventListener('click', ()=>{
 
 ScrollReveal().reveal('.showprofile');
 ScrollReveal().reveal('.grilla', { delay: 500 });
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
