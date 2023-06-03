@@ -25,6 +25,17 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
-
-function transitionToMobileGPT() {
-  window.location.href = "mobileGPT.html";}
+function transitionToMobile_proyects() {
+  document.querySelector('.container2').classList.add('slide-out');
+  setTimeout(function() {
+    window.location.href = "mobile_proyects.html";
+  }, 300);
+}
+function transitionToHome() {
+  document.querySelector('.card').classList.add('slide-out');
+  setTimeout(function() {
+    window.location.href = "index.html";
+  }, 0);
+}
+// function transitionToMobile_proyects() {
+//   window.location.href = "mobile_proyects.html";}
