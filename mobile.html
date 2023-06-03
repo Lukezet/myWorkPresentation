@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileWorks</title>
+</head>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Establecer el ancho y la altura de la vista al 100% */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* Centrar el contenedor de la grilla */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Establecer el ancho y el alto de cada celda de la grilla al 50% */
+.cell {
+  width: 50%;
+  height: 50%;
+}
+
+/* Establecer el ancho y el alto de cada video al 100% */
+video {
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Crear una grilla de 4 celdas con los videos -->
+  <div class="cell">
+    <video src="video1.mp4" controls></video>
+  </div>
+  <div class="cell">
+    <video src="video2.mp4" controls></video>
+  </div>
+  <div class="cell">
+    <video src="video3.mp4" controls></video>
+  </div>
+  <div class="cell">
+    <video src="video4.mp4" controls></video>
+  </div>
+</div>
+
+</body>
+</html>

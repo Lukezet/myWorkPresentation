@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
   }
-  /* html {
+  html, body {
+    overflow-x: hidden;
     scroll-behavior: smooth;
+  }
+  html {
     scroll-padding-top: 60px;
     scroll-padding-bottom: 60px;
     scroll-padding-left: 0;
@@ -14,7 +17,7 @@
   
   a[href^="#"] {
     transition-duration: var(--scroll-duration);
-  } */
+  }
 
 body{
     width: 100%;
@@ -144,9 +147,9 @@ ul {
     display: flex;
     align-items: center;
     justify-content:center;
-
-
+  
 }
+
 .grilla{
     
     display:grid;
@@ -203,8 +206,8 @@ ul {
 
 }
 .grilla .mirrorbtn:hover{
-    border: 1px solid #2086ca
-
+    /* border: 1px solid #2086ca */
+    border: 1px solid #7062d3
 }
 .btnKnowMobile{
     display: none;
@@ -229,6 +232,10 @@ ul {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     visibility: hidden;
     transition: all .4s;
+}
+.back-to-top:hover{
+    border:3px solid #7062d3;
+    /* border:3px solid #29ffbf; */
 }
 .back-to-top__image {
     height: 70%;
@@ -258,7 +265,7 @@ ul {
         height: 100%;
         width: 30%;
         min-width: 200px;
-        background: linear-gradient(118deg, #3ac28e 5%, #1992e4 100%);
+        background: linear-gradient(118deg, #29ffbf 5%, #1992e4 100%);
         border-radius: 0px 0px 100px 0px;
         transform: translateX(-500px);
         

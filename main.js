@@ -5,28 +5,6 @@ document.querySelector('.menu-btn').addEventListener('click', ()=>{
         //classlist para agregar una clase
         //metodo toggle para que solo la cree si no existe. y si esta la quite 
 
-ScrollReveal().reveal('.showprofile');
-ScrollReveal().reveal('.grilla', { delay: 500 });
-
-const handleFirstTab = (e) => {
-    if(e.key === 'Tab') {
-      document.body.classList.add('user-is-tabbing')
-  
-      window.removeEventListener('keydown', handleFirstTab)
-      window.addEventListener('mousedown', handleMouseDownOnce)
-    }
-  
-  }
-  
-  const handleMouseDownOnce = () => {
-    document.body.classList.remove('user-is-tabbing')
-  
-    window.removeEventListener('mousedown', handleMouseDownOnce)
-    window.addEventListener('keydown', handleFirstTab)
-  }
-  
-  window.addEventListener('keydown', handleFirstTab)
-
 const backToTopButton = document.querySelector(".back-to-top");
 let isBackToTopRendered = false;
 
@@ -47,3 +25,6 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+function transitionToMobileGPT() {
+  window.location.href = "mobileGPT.html";}
